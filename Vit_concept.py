@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Build relative paths
 TOKENIZER_PATH = os.path.join(BASE_DIR, "tokenizer_vs22_extendarctokens")
-MODEL_SAVE_PATH = os.path.join(BASE_DIR, "model", "final_cls_modell.pt")
+MODEL_SAVE_PATH_1 = os.path.join(BASE_DIR, "model", "final_cls_modell.pt")
 
 print("Loading tokenizer from:", TOKENIZER_PATH)
 print("Loading model from:", MODEL_SAVE_PATH)
