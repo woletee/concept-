@@ -5,3 +5,5 @@ numpy
 scikit-learn
 transformers
 pandas
+matplotlib
+numpy
