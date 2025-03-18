@@ -1,5 +1,7 @@
 Flask
-Flask-Cors         # Only if you plan to enable cross-origin access (optional but often needed)
+Flask-Cors
 torch
 numpy
-scikit-learn       # If used inside your genetic programming (common)
+scikit-learn
+transformers
+pandas
