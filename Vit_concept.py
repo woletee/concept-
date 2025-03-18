@@ -9,10 +9,18 @@ from custom_t5_vit import CustomT5ForConditionalGeneration
 from GP import genetic_programming
 from Nods import FUNCTIONS_dictionary
 from task_loader import *
-TOKENIZER_PATH = r"C:\Users\gebre\OneDrive - GIST\문서\KakaoTalk Downloads\GPARC_concept_with_vit\GPARC\SRC\Model\tokenizer_vs22_extendarctokens"
-#MODEL_SAVE_PATH = r"C:\Users\gebre\OneDrive - GIST\문서\KakaoTalk Downloads\GPARC_concept_with_vit\GPARC\SRC\Model\final_cls_model.pt"
-MODEL_SAVE_PATH_1=r"C:\Users\gebre\OneDrive - GIST\문서\KakaoTalk Downloads\GPARC_concept_with_vit\GPARC\SRC\Model\final_cls_modell.pt"
-print("Loading tokenizer...")
+import os
+
+# Get the base directory where the current script is running
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Build relative paths
+TOKENIZER_PATH = os.path.join(BASE_DIR, "tokenizer_vs22_extendarctokens")
+MODEL_SAVE_PATH = os.path.join(BASE_DIR, "model", "final_cls_modell.pt")
+
+print("Loading tokenizer from:", TOKENIZER_PATH)
+print("Loading model from:", MODEL_SAVE_PATH)
+
 tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH)
 class CustomT5Config(T5Config):
     def __init__(self, PE_mix_strategy="default", use_objidx="yes",
