@@ -1,5 +1,5 @@
 import json
-from nn import run_inference, model 
+from Vir_concept import run_inference, model 
 from GP import genetic_programming
 JSON_DATA_PATH = r"C:\Users\gebre\OneDrive - GIST\문서\KakaoTalk Downloads\GPARC_concept_with_vit\GPARC\SRC\data\AboveBelow3.json"
 with open(JSON_DATA_PATH, "r") as f:
