@@ -45,8 +45,7 @@ def run_model():
         
         print("Returning response...")
         return jsonify({
-            "best_program": str(best_program),
-            "generations": generations
+            "best_program": str(best_program)
         })
     except Exception as e:
         print("🔥 ERROR in /run route!")
