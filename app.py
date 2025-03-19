@@ -36,7 +36,7 @@ def run_model():
         best_program, generations = genetic_programming(
             input_output_pairs=input_output_pairs,
             population_size=30,
-            generations=100,
+            generations=10,
             mutation_rate=0.2,
             crossover_rate=0.7,
             max_depth=3,
