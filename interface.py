@@ -1,7 +1,7 @@
 import streamlit as st
 import json
-from nn import run_inference, model
-from gen import genetic_programming
+from Vit_concept import run_inference, model
+from GP import genetic_programming
 
 st.title(" Concept Guieded GP_ARC Solver")
 st.write("Upload your ARC task (JSON format) and let the system solve it.")
